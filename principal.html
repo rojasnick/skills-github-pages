@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #d63384;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz San Valentín! 💖</h1>
+        <p>Te invito a compartir un día especial conmigo el 14 de febrero.</p>
+        <p>Habrá sorpresas, amor y muchos momentos inolvidables. 💕</p>
+        <p class="heart">❤️</p>
+        <button onclick="confirmarAsistencia()">Aceptar Invitación</button>
+    </div>
+    <script>
+        function confirmarAsistencia() {
+            alert('¡Gracias por aceptar! Nos vemos el 14 de febrero 💕');
+        }
+    </script>
+</body>
+</html>
